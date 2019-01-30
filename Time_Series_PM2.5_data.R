@@ -148,7 +148,6 @@ XG_preds = predict(fit5_xgModel, X_test)
 fit5.XG.RMSEP = sqrt(1/4*sum((Y_test - XG_preds)^2))
 fit5.XG.RMSEP # 5086.488
 
-cv.preds = predict(cv, X_test)
 xgb.importance(model = xgModel) # Print the importance of variables
 
 
